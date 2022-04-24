@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/lato-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/lato-v22-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v22-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('../fonts/lato-v22-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v22-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    margin: 0;
+    font-size: 16px;
+    font-family: Lato;
+
+}
+/*header*/
+.header{
+    /*background: #04528a;*/
+    background: rgb(217, 18, 18);
+    padding: 35px 0;
+    box-shadow: 1px 0px 4px rgb(0 0 0 / 25%);
+
+}
+.logo{
+    width: 270px;
+    height: 100px;
+}
+
+.container{
+    width: 1140px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+
+
+}
+
+
+.backTo{
+    background-color: #0DCAF0;
+    border: 1px solid #0c70b7;
+
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .7s;
+}
+.backTo:hover{
+    background-color: #fff;
+    color: #04528a;
+
+}
+.back{
+    background-color: #0DCAF0;
+    border: 1px solid #0c70b7;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .7s;
+}
+/* menu*/
+.menu {
+    height: 60px;
+    box-shadow: 0 5px 5px 0 #e0e0e0;
+    margin-bottom: 20px;
+}
+.menu__container {
+    position: relative;
+
+}
+
+/* Products_row page */
+hr{
+    margin: 10px 0 20px 0;
+}
+.courseImg{
+
+    padding: 0 20px 20px 0;
+}
+.course-content{
+    font-size: 16px;
+}
+.product__submit{
+    background-color: #0DCAF0;
+    border: 1px solid #0c70b7;
+    text-decoration: none;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .7s;
+}
+.product__submit:hover{
+    background-color: #fff;
+    color: #04528a;
+}

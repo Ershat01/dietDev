@@ -1,0 +1,213 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/lato-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/lato-v22-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v22-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('../fonts/lato-v22-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v22-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body{
+    font-size: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 1.2;
+    font-weight: normal;
+    color:#000000;
+}
+
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+ 
+}
+a{
+    text-decoration: none;
+}
+/*header*/
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.header_wrapper{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.header_item{
+    margin-right: 82px;
+}
+.header_item:last-child{
+    margin-right: 0;
+}
+.header_link{
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;    
+}
+.header_link:hover,.header_link:focus{
+    opacity: .75;
+}
+.header_logo-pic{
+    height: 50px;
+}
+
+
+/*intro start*/
+.intro{
+    min-height: 100vh;
+    background: url(../images/back.jpg) no-repeat center;
+    background-size: cover; 
+    padding-top: 263px;
+}
+.photo-form{
+    border-radius: 96px;
+    position:absolute;
+}
+.intro_title{
+    
+    margin-left: 250px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color:white;
+    max-width: 600px;
+    height: 110px;
+    margin-bottom: 50px;
+}
+.intro_subtitle{
+   
+    color:white;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 546px;
+    margin-bottom: 59px;
+
+}
+.input-form_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-form_field{
+    width: 297px;
+    background-color: transparent;
+    background: url(../images/Ovaln.svg) no-repeat left 7px;
+    background-size: 20px;
+    border: 0 ;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+    cursor:default;
+
+}
+.input-form_field::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+}
+
+.input-form{
+    margin-bottom: 107px;
+}
+
+
+/*main end*/
+
+/* cards*/
+
+.benefits_wrap{
+    
+    max-width: 1262px;
+    height: 300px;
+    background-color:#BFC0C5;
+    margin: 0 auto;
+    
+}
+.benefits_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:55px;
+    padding: 0 100px;
+}
+.benefits_card{
+    grid-column: span 1;
+}
+.benefits_card-pic{
+    max-width: 66px;
+    margin-bottom: 37px;
+    margin-top: 25px;
+}
+.benefits_card-thumb{
+    display: block;
+}
+.benefits_card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.benefits_card-desc{
+    font-size: 14px;
+    line-height: 16px;
+}
+.benefits_card-more{
+    display: inline-block;
+    padding-right: 59px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url(../images/Shape.svg) no-repeat right center;
+}   
